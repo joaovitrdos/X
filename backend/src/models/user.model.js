@@ -11,8 +11,10 @@ const userSchema = new mongoose.Schema(
             type: String,
             required: true,
             unique: true,
+            
+            
         },
-        fistName: {
+        firstName: {
             type: String,
             required: true,
         },
