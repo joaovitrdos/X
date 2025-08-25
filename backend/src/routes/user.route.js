@@ -2,7 +2,8 @@ import { getUserProfile,
     updateProfile, 
     syncUser, 
     getCurrentUser, 
-    followUser } from "../controllers/user.controller.js";
+    followUser 
+} from "../controllers/user.controller.js";
 import express from "express";
 import { protectRoute } from "../middleware/auth.middleware.js";
 
