@@ -12,12 +12,12 @@ import upload from "../middleware/upload.middleware.js";
 
 const router = express.Router();
 
-// public routes
+// Rotas Publicas
 router.get("/", getPosts);
 router.get("/:postId", getPost);
 router.get("/user/:username", getUserPosts);
 
-// protected proteced
+// Rotas Protegidas
 router.post("/", protectRoute, upload.single("image"), createPost);
 router.post("/:postId/like", protectRoute, likePost);
 router.delete("/:postId", protectRoute, deletePost);
